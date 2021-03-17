@@ -1,0 +1,123 @@
+html{
+    background-image: url(images/tb_m2.jpg);
+    background-repeat: repeat;
+}
+body{
+    background-color: rgba(231, 230, 223, 0.37);
+    padding-left: 5%;
+}
+#profile{
+    width: 70%;
+    height: 250px;
+    border-style: dashed;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+#dp{
+    border-radius: 50%;
+    width: 245px;
+    height: 250xpx;
+    margin-left: 35%;
+}
+#name{
+    margin-top: -20%;
+    margin-left: 10%;
+    color:cornsilk;
+}
+
+table, th, td {
+    border: 1px solid black; 
+    background-color: whitesmoke 
+}
+
+table {
+    width: 98%; 
+}  
+
+@media screen and (max-width: 600px) {
+.column {
+    width: 50%;
+}
+#profile{
+    width: 100%;
+    height: 250px;
+    border-style: dashed;
+    margin: auto;
+    background-color:rgb(0, 0, 0);
+}
+#dp{
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 23%;
+    height: 200px;
+    margin-left: 20%;
+}
+#name{
+    margin-top: -90%;
+    margin-left: 35%;
+    font-size: medium;
+    color: cornsilk;
+}
+}
+
+@media screen and (max-width: 540px) {
+    #one { 
+    float: none;
+    margin-right:0;
+    width:100%;
+    border:0;
+    border-bottom:2px solid #000;    
+}
+
+#name{
+    
+    margin-top: -76%;
+    margin-left: 35%;
+    font-size: medium;
+    color: cornsilk;
+}
+}
+
+
+*{
+box-sizing: border-box;
+}
+
+#btmGrid{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    background-color: rgba(210, 238, 238, 0.822);
+}
+
+.btmSection{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btmSection:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+img{
+    width: 45%;
+}
+
+div{
+    width: 45%;
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 992px){
+    #btmGrid{
+        flex-direction: row;
+    }
+
+    .btmSection:nth-child(n){
+        flex-direction: row;
+    }
+
+}
