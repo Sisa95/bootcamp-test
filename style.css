@@ -38,6 +38,12 @@ a:hover{
     color:cornsilk;
 }
 
+#name_{
+    margin-top: -33.5vh;
+    margin-left: 25vh;
+    visibility: hidden;
+}
+
 table, th, td {
     font-size: 18px;
     background-color: rgba(245, 245, 245, 0.493) 
@@ -114,10 +120,19 @@ and (max-device-width : 480px) {
         width: 70% !important;
     }
 
+    #name_{
+        margin-top: -33.5vh;
+        margin-left: 25vh;
+        color:cornsilk;
+        font-family: 'Pacifico', cursive;
+        font-size: 18px;
+    }
+
     #name{
         margin-top: -110% !important;
         margin-left: 10%;
         color:cornsilk;
+        visibility: hidden; /*Should be fixed if not working*/
     }
 
     a{
@@ -125,12 +140,6 @@ and (max-device-width : 480px) {
         filter: blur(0px);
     }
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 600px) {
 .column {
@@ -142,6 +151,13 @@ and (max-device-width : 480px) {
     border-style: dashed;
     margin: auto;
     background-color:rgb(0, 0, 0);
+}
+#name_{
+    margin-top: -33.5vh;
+    margin-left: 25vh;
+    color:cornsilk;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
 }
 #dp{
     border-radius: 50%;
@@ -341,12 +357,13 @@ div{
     margin-left: 10%;
 }
 #cty {
-    max-width: 50%;
-    height: 10%;
+    max-width: 50vh;
+    height: 50vh;
     border: 10px;
     border-radius: 10%;
     border-color: aquamarine;
     border-style:groove;
+    margin-top: -35vh;
 }
 .city {
     flex-basis: 100%
