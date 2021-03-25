@@ -6,17 +6,23 @@ html{
     background-attachment: fixed;
 }
 body{
-    background-color: rgba(231, 230, 223, 0.37);
+    background-color: rgba(0, 0, 0, 0.801);
     padding-left: 5%;
 }
-a{
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-    filter: blur(5px);
+h1{
+    color:rgb(0, 0, 0);
+    width: 100%;
+    background-color: white;
 }
-a:hover{
-    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
-    filter: blur(0px);
+.txt{
+    margin:auto;
+    padding-left: 12%;
 }
+#scroll_{
+    margin-top: -12vh;
+    color: aliceblue;
+}
+
 #profile{
     width: 70%;
     height: 250px;
@@ -33,7 +39,7 @@ a:hover{
     
 }
 #name{
-    margin-top: -20%;
+    margin-top: -25%;
     margin-left: 10%;
     color:cornsilk;
     color:cornsilk;
@@ -47,13 +53,53 @@ a:hover{
     visibility: hidden;
 }
 
+/*City section styling*/
+.cityContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+#cty {
+    max-width: 50vh;
+    height: 50vh;
+    border: 10px;
+    border-radius: 10%;
+    border-color: aquamarine;
+    border-style:groove;
+    margin-top: -35vh;
+}
+.city {
+    flex-basis: 100%
+}
+.cityText {
+    margin-left: -40%;
+    margin-top: -35%;
+    padding-top: 25%;
+    font-size: 20px;
+    padding-left: 1px;
+    width: 50%;
+} /*City section end styling*/
+
 table, th, td {
     font-size: 18px;
-    background-color: rgba(245, 245, 245, 0.493) 
+    background-color: rgba(0, 0, 0, 0.164);
+    color:white;
+    border:1px solid white;
 }
 
-table {
+table{
     width: 98%; 
+}
+th{
+    background-color: white;
+    color: black;
+}
+
+.btmSection{
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.808);
 }
 
 ul {
@@ -62,255 +108,8 @@ ul {
     padding: 0;
 }
 
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    #profile{
-        width: 70%;
-        height: 250px;
-        border-style: dashed;
-        margin: auto;
-        background-color: rgb(0, 0, 0);
-        
-    }
-    #dp{
-        border-radius: 50%;
-        width: 245px;
-        height: 250xpx;
-        margin-left: 35%;
-        
-    }
-    #name{
-        margin-top: -20%;
-        margin-left: 10%;
-        color:cornsilk;
-    }
-    
-    table, th, td {
-        font-size: 18px;
-        background-color: rgba(245, 245, 245, 0.493) 
-    }
-    
-    table {
-        width: 98%; 
-    }
-
-    .cityContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 98% !important;
-        margin-left: -20%;
-    }
-    #cty {
-        width: 700px !important;
-        height: 300px !important;
-        border: 0px !important;
-        margin-left: -25%;
-        /*  */
-    }
-    .city {
-        flex-basis: 100%
-    }
-    .cityText {
-        margin-left: -40%;
-        margin-top: -35%;
-        padding-top: 25%;
-        font-size: 13px !important;
-        padding-left: 1px;
-        width: 70% !important;
-    }
-
-    #name_{
-        margin-top: -33.5vh;
-        margin-left: 25vh;
-        color:cornsilk;
-        font-family: 'Pacifico', cursive;
-        font-size: 18px;
-    }
-
-    #name{
-        margin-top: -110% !important;
-        margin-left: 10%;
-        color:cornsilk;
-        visibility: hidden; /*Should be fixed if not working*/
-    }
-
-    a{
-        -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
-        filter: blur(0px);
-    }
-}
-
-@media screen and (max-width: 600px) {
-.column {
-    width: 50%;
-}
-#profile{
-    width: 100%;
-    height: 250px;
-    border-style: dashed;
-    margin: auto;
-    background-color:rgb(0, 0, 0);
-}
-#name_{
-    margin-top: -33.5vh;
-    margin-left: 25vh;
-    color:cornsilk;
-    font-family: 'Pacifico', cursive;
-    font-size: 18px;
-}
-#dp{
-    border-radius: 50%;
-    width: 200px;
-    margin-top: 23%;
-    height: 200px;
-    margin-left: 20%;
-}
-#name{
-    margin-top: -90%;
-    margin-left: 35%;
-    font-size: medium;
-    color: cornsilk;
-}
 *{
     box-sizing: border-box;
-    }
-    
-    #btmGrid{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgba(210, 238, 238, 0.3);
-    }
-    
-    .btmSection{
-        padding: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 12.5;
-    }
-    
-    .btmSection:nth-child(odd){
-        flex-direction: row-reverse;
-    }
-    
-
-    img{
-        width: 45%;
-    }
-    
-    div{
-        width: 45%;
-    }
-
-}
-
-@media screen and (max-width: 540px) {
-    #one { 
-    float: none;
-    margin-right:0;
-    width:100%;
-    border:0;
-    border-bottom:2px solid #000;    
-}
-
-#profile{
-    width: 100%;
-    height: 150px;
-    border-style: dashed;
-    background-color: rgb(0, 0, 0);
-    
-}
-#dp{
-    border-radius: 50%;
-    width: 130px;
-    height: 120px;
-    margin-left: 35%;
-    margin-top: 6vh;
-    
-}
-#name{
-    margin-top: -20%;
-    margin-left: 10%;
-    color:cornsilk;
-}
-
-table, th, td {
-    font-size: 18px;
-    background-color: rgba(245, 245, 245, 0.493) 
-}
-
-table {
-    width: 98%; 
-}
-
-.cityContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 98% !important;
-    margin-left: -20%;
-}
-#cty {
-    width: 150px !important;
-    height: 35vh !important;
-    border: 0px !important;
-    margin-left: 15vh;
-    margin-top: -6vh;
-    /*  */
-}
-::-webkit-scrollbar {
-    display: none;
-}
-
-#scroll_{
-    width: 150%;
-    height: 35vh;
-    overflow-y: scroll;
-    box-sizing: content-box;
-    font-size: 14px;
-
-}
-ul{
-    overflow-y: scroll;
-    box-sizing: content-box;
-    font-size: 14px;height: 35vh;
-}
-.city {
-    flex-basis: 100%
-}
-.cityText {
-    margin-left: -0%;
-    margin-top: -35%;
-    padding-top: 25%;
-    padding-left: 1px;
-}
-
-#name{
-    color:cornsilk;
-    visibility: hidden;
-}
-#name_{
-    margin-top: -33.5vh;
-    margin-left: 25vh;
-    color:cornsilk;
-    font-family: 'Pacifico', cursive;
-    font-size: 18px;
-}
-
-a{
-    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
-    filter: blur(0px);
-}
-}
-
-
-*{
-box-sizing: border-box;
 }
 
 #btmGrid{
@@ -350,34 +149,293 @@ div{
         flex-direction: row;
     }
 
-
-
-.cityContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-}
-#cty {
-    max-width: 50vh;
-    height: 50vh;
-    border: 10px;
-    border-radius: 10%;
-    border-color: aquamarine;
-    border-style:groove;
-    margin-top: -35vh;
-}
-.city {
-    flex-basis: 100%
-}
-.cityText {
-    margin-left: -40%;
-    margin-top: -35%;
-    padding-top: 25%;
-    font-size: 20px;
-    padding-left: 1px;
-    width: 50%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    /* CSS */
+    
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+    html{
+        max-width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    body{
+        
+        max-width: 100%;
+        padding:0vh;
+        overflow-x: hidden;
+    }
+    h3{
+        margin-top: -30%;
+    }
+    #profile{
+        width: 100%;
+        height: 165px;
+        background-color: rgb(0, 0, 0);
+        
+    }
+    #dp{
+        border-radius: 50%;
+        width: 20vh;
+        height: 20vh;
+        float: left;
+        border: 3px solid white;
+        margin-top: -5%;  
+    }
+    #name{
+        visibility: hidden;
+    }
+    #name_{
+        visibility: visible;
+        color: antiquewhite;
+        margin-top: 0;
+        white-space: nowrap;
+        margin-top: -38%;
+        margin-left: 20%;
+        font-size: 1.3rem;
+    }
+    /*City section styling*/
+    .cityContainer {
+        display: flex;
+        width: 100%;
+        margin-left: 10%;
+    }
+    #cty {
+        width: 250px;
+        height: 50vh;
+        border: 10px;
+        border-radius: 10%;
+        border-color: aquamarine;
+        border-style:groove;
+        margin: auto;
+        margin-left: -20%;
+        margin-top: -40vh;
+        float: left;
+        clear: both;
+    }
+    .city {
+        flex-basis: 100%;
+        margin-top:-40vh;
+    }
+    #scroll_ {
+        margin-left: -115%;
+        margin-top: 30vh;
+        padding-top: 30%;
+        font-size: 18px;
+        padding-left: 1px;
+        width: 100%;
+        float: left;
+        font-size: 18px;
+    } 
+
+    /*City section end styling*/
+     
+    .btm_img{
+        margin-top: -55%;
+    }
+    #btm_img2{
+        margin-top: -85%;
+    }
+    #btm_img3{
+        margin-top: -50%;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;  
+        background: transparent;  
+    }
+
+    ul{
+        margin-left: -25px;
+        width:25vh;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+}/*######################Working here##############*/
+@media only screen and (min-width: 375px) and (max-width: 426px){
+    html{
+        max-width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    body{
+        max-width: 100%;
+        padding:0vh;
+        overflow-x: hidden;
+    }
+    h3{
+        margin-top: -30%;
+    }
+    #profile{
+        width: 100%;
+        height: 165px;
+        background-color: rgb(0, 0, 0);
+        
+    }
+    #dp{
+        border-radius: 50%;
+        width: 20vh;
+        height: 20vh;
+        float: left;
+        border: 3px solid white;
+        margin-top: -4%;  
+    }
+    #name{
+        visibility: hidden;
+    }
+    #name_{
+        visibility: visible;
+        color: antiquewhite;
+        margin-top: 0;
+        white-space: nowrap;
+        margin-top: -28%;
+        margin-left: 20%;
+        font-size: 1.3rem;
+    }
+    /*City section styling*/
+    .cityContainer {
+        display: flex;
+        width: 100%;
+        margin-left: 10%;
+    }
+    #cty {
+        width: 250px;
+        height: 50vh;
+        border: 10px;
+        border-radius: 10%;
+        border-color: aquamarine;
+        border-style:groove;
+        margin: auto;
+        margin-left: -20%;
+        margin-top: -33vh;
+        float: left;
+        clear: both;
+    }
+    .city {
+        flex-basis: 100%;
+        margin-top:-40vh;
+    }
+    #scroll_ {
+        margin-left: -115%;
+        margin-top: 30vh;
+        padding-top: 30%;
+        font-size: 18px;
+        padding-left: 1px;
+        width: 100%;
+        float: left;
+        font-size: 18px;
+    }/*---------end-------------*/
+    .btm_img{
+        margin-top: -50%;
+    }
+    #btm_img2{
+        margin-top: -70%;
+    }
+    #btm_img3{
+        margin-top: -35%;
+    }
+}
+/*######################Working here##############*/
+@media only screen and (min-width: 425px) and (max-width: 767px){
+    html{
+        max-width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    body{
+        max-width: 100%;
+        padding:0vh;
+        overflow-x: hidden;
+    }
+    h3{
+        margin-top: -30%;
+    }
+    #profile{
+        width: 100%;
+        height: 165px;
+        background-color: rgb(0, 0, 0);
+        
+    }
+    #dp{
+        border-radius: 50%;
+        width: 20vh;
+        height: 20vh;
+        float: left;
+        border: 3px solid white;
+        margin-top: -2%;  
+    }
+    #name{
+        visibility: hidden;
+    }
+    #name_{
+        visibility: visible;
+        color: antiquewhite;
+        margin-top: 0;
+        white-space: nowrap;
+        margin-top: -23%;
+        margin-left: 20%;
+        font-size: 1.3rem;
+    }
+    /*City section styling*/
+    .cityContainer {
+        display: flex;
+        width: 100%;
+        margin-left: 10%;
+    }
+    #cty {
+        width: 250px;
+        height: 50vh;
+        border: 10px;
+        border-radius: 10%;
+        border-color: aquamarine;
+        border-style:groove;
+        margin: auto;
+        margin-left: -5%;
+        margin-top: -28vh;
+        float: left;
+        clear: both;
+    }
+    .city {
+        flex-basis: 100%;
+        margin-top:-40vh;
+    }
+    #scroll_ {
+        margin-left: -115%;
+        margin-top: 30vh;
+        padding-top: 30%;
+        font-size: 18px;
+        padding-left: 1px;
+        width: 100%;
+        float: left;
+        font-size: 18px;
+    }/*---------end-------------*/
+    .btm_img{
+        margin-top: -15%;
+    }
+    #btm_img2{
+        margin-top: -35%;
+    }
+    #btm_img3{
+        margin-top: -10%;
+    }
 }
