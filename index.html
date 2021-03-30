@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
-    <div id="profile">
-      <h1 id="name">
-        Sisa Ponye <br/>
-        Cape Town <br/>
-        Western Cape 
-    </h1>
-    <p id="name_">Sisa Ponye<br/>
-    Cape Town, Western Cape</p>
-      <img src="images/i.jpg" id="dp">
-    </div>
-    <section id="sec_Container">
-      <section style=>
-        <h1 style="padding-left: 40%;">PARIS</h1>
-        <p></p>
-        <div class="cityContainer">
-          <div class="city">
-            <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg" id="cty">
-          </div>
-            <p id="scroll_"> 
-              Paris is known as a city of Romance and every couple worth their salt will make a trip to the city of love at some point. With a history steeped in romanticism, the city permeates love through its very pores, and there’s little wonder it's cited as the world’s most romantic city. From proposals under the looming Eiffel Tower
-              <br/>
-               
-              It is filled with an abundance of landmarks, museums and cathedrals to visit, from the iconic Eiffel Tower, to the gothic Notre Dame to the Louvre and gardens galore, few places do landmarks quite so well as the city of love.
-            </p>
-          </div>
+    <div class="container">
+        <div class="inner_container">
+        <div class="clear_float headings">
+            <div class="col-6 headings--heading">
+                <h2>Sisa Ponye<br>
+                Cape Town, Western Cape</h2>
+            </div>
+            <div class="col-6 headings--image">
+                <img src="images/i.jpg" style="border: 5px solid antiquewhite; border-radius:15%;" alt="city">
+            </div>
         </div>
-          
-    </section>
-      <section id="lang"> 
-      <h1 class="txt">A FOREIGN LANGUAGE</h1>
-        <p style="font-size: 18px;color: antiquewhite;padding: 5px;">
+            
+        <div class="clear_float city">
+            <h2>PARIS</h2>
+            <div class="col-6 city--image">
+                <img src="images/city.jpg" style="width: 40vh; height:40vh; box-shadow: 0 5px 10px rgb(255, 255, 255);" alt="city">
+            </div>
+            <div class="col-6 city--text">
+                <p>Paris is known as a city of Romance and every couple worth their salt will 
+                    make a trip to the city of love at some point. With a history steeped in romanticism, the city permeates love through its very pores, and there’s little wonder it's cited as the world’s most romantic city. From proposals under the looming Eiffel Tower
+                    It is filled with an abundance of landmarks, 
+                    museums and cathedrals to visit, from the iconic Eiffel Tower, 
+                    to the gothic Notre Dame to the Louvre and gardens galore, few places do 
+                    landmarks quite so well as the city of love.
+                </p>
+            </div>
+        </div>
+            
+        <div class="clear_float foreign_lang">
+            <div class="col-12">
+                <h2 class="txt">FOREIGN LANGUAGE</h2>
+        <p style="font-size: 20px;color: white;padding: 5px;">
           Besides english French is the most taught and spoken language, the languge is taught and spoken in almost every continent.
           French is a good base for learning other languages e.g Spanish, Italian, Portuguese and Romanian.
         </p>
@@ -60,79 +62,80 @@
             </tr>
           </table>
      </section>
+            </div>
+        </div>
 
-     <section>
-      <h1 class="txt">HISTORIC PLACES</h1>
-    <div id="btmGrid">
-        <section class="btmSection">
-            <div>
-              <p></p>
-              <h3>Castle Of Good Hope</h3>
-              <ul>
-                <li>
-                  * It was built between 1666 and 1679 and is known as the oldest surviving building in South Africa.
-
-                </li>
-                <li>
-                  <p></p>
-                </li>
-                <li>
-                  * The Castle formed part of a formidable defensive system at the Cape that discouraged attacks.
-                </li>
-                <p></p>
-                <li>
-                  * On the left hand side there are two cells designed for a maximum of ten prisoners.
-                </li>
-              </ul>
+          <div class="clear_float historical_places">
+            <h2>Historical Places</h2>
+            <div class="col-4 good_hope">
+                <h3 class="heading3">Castle Of Good Hope</h3>
+                <div class="col-6 good_hope--text">
+                    <ul>
+                        <li>
+                          * It was built between 1666 and 1679 and is known as the oldest surviving building in South Africa.
+                        </li>
+                        <li>
+                          <p></p>
+                        </li>
+                        <li>
+                          * The Castle formed part of a formidable defensive system at the Cape that discouraged attacks.
+                        </li>
+                        <p></p>
+                        <li>
+                          * On the left hand side there are two cells designed for a maximum of ten prisoners.
+                        </li>
+                      </ul>
+                </div>
+                <div class="col-6 good_hope--image">
+                    <img src="images/castle.jpeg" alt="Castle Of Good Hope">
+                </div>
             </div>
-            <img src="images/castle.jpeg" class="btm_img" alt="">
-        </section>
-        <section class="btmSection">
-            <div> <!--undo until this point-->
-              <h3>District 6</h3>
-              <p>
-                <br/>
-              </p>
-              <ul>
-                <li>
-                  * District Six was a multi working-class area just off the centre of Cape Town,
-                </li>
-                <p></p>
-                <li>
-                  * It was named the sixth district of Cape Town in 1867. Originally established as a community of freed slaves, merchants, artisans, labourers and immigrants.</li>
-                <p></p>
-                  <li>
-                  * District Six, was an impoverished but lively community of 55 000, predominantly coloured people.
-                  </li>
-              </ul>
+            <div class="col-4 district_6">
+                <h3 class="heading3">District 6</h3>
+                <div class="col-6 district_6--text">
+                    <ul>
+                        <li>
+                          * District Six was a multi working-class area just off the centre of Cape Town,
+                        </li>
+                        <p></p>
+                        <li>
+                          * It was named the sixth district of Cape Town in 1867. Originally established as a community of freed slaves, merchants, artisans, labourers and immigrants.</li>
+                        <p></p>
+                          <li>
+                          * District Six, was an impoverished but lively community of 55 000, predominantly coloured people.
+                          </li>
+                      </ul>
+                </div>
+                <div class="col-6 district_6--image">
+                    <img src="images/city_hall.jpeg" alt="">
+                </div>
             </div>
-            <img src="images/city_hall.jpeg" id="btm_img2" alt="">
-        </section>
-        <section class="btmSection">
-            <div>
-              <h3>Church Square</h3>
-              <p>
-                <br/>
-              </p>
-              <ul>
-                <li>
-                  * Church Square was built in the early 18th century when 
-                  plots owned by residents were cut back to make way for a public square. 
-                </li>
-                <p></p>
-                <li>
-                  * The church's graveyard was situated between the church and the Slave Lodge.
-                </li>
-                <p></p>
-                <li>
-                  * The Square took its name from the Dutch Reformed Church.
-                </li>
-              </ul>
+            <div class="col-4 church_square">
+                <h3 class="heading3">Church Square</h3>
+                  <div class="col-6 church_square--text">
+                      <ul>
+                          <li>
+                            * Church Square was built in the early 18th century when 
+                            plots owned by residents were cut back to make way for a public square. 
+                          </li>
+                          <p></p>
+                          <li>
+                            * The church's graveyard was situated between the church and the Slave Lodge.
+                          </li>
+                          <p></p>
+                          <li>
+                            * The Square took its name from the Dutch Reformed Church.
+                          </li>
+                        </ul>
+                  </div>
+                  <div class="col-6 church_square--image">
+                      <img src="images/city_hall.jpeg" alt="">
+                  </div>
             </div>
-            <img src="images/city_hall.jpeg" id="btm_img3" alt="">
-        </section>
+        </div>
+        </div>
     </div>
-
 
 </body>
 </html>
+
