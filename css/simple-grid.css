@@ -264,3 +264,6 @@ p {
     max-width: 60rem;
   }
 }
+@media (max-width: 768px) {
+  
+}
