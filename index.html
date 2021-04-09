@@ -1,53 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+<title>Home</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    body{
+        margin-top: 5%;
+        background-color: rgba(194, 168, 120, 0.507);
+        background: url(images/pp1.jpg);
+        padding: 5.38%;
+        padding-left: 12.5%;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+    a{
+        text-decoration: none;
+        color: white;;
+    }
+    a:hover{
+        color: green;
+        background-color: black;
+    }
 
+    .btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 7px 2px 5px #690769;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 60px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+@media only screen and (max-width:688px){
+    body{
+        margin-top: 5%;
+        background-color: rgba(194, 168, 120, 0.507);
+        background: url(images/pp1.jpg);
+        padding: 5.38%;
+        padding-left: 20.5%;
+    }
+    h1{
+        font-size: 3.0rem;
+    }
+    .btn{margin-top: 20px;}
+
+}
+</style>
 </head>
 <body>
-    <body>
-        <!-- -->
-        <div id="mocha"></div>
-        <script>
-            // the mocha test style to use - we use BDD - Behviour Driven Development
-            mocha.setup('bdd');
-            //ensure the assert function is available
-            var assert = chai.assert;
-        </script>
+        <h1>Sisa Ponye's Landing page for responsive Basic </h1>
+            <h1> and Simple grid design</h1>
+       
+        <a href="basic.html"><button class="btn" >Basic Website</button></a>
+        <a href="grid.html"><button class="btn" >Basic Website</button></a>
+
+        
     
-        <script src="/functions/greet.js"></script>
-        <script src="./test/greet.test.js" ></script>
-
-        <script src="/functions/isFromBellville.js"></script>
-        <script src="./test/isFromBellville.test.js" ></script>
-
-        <script src="/functions/regCheck.js"></script>
-        <script src="./test/regCheck.test.js" ></script>
-
-        <script src="/functions/countRegNumber.js"></script>
-        <script src="./test/countRegNumber.test.js" ></script>
-
-        <script src="/functions/isWeekday.js"></script>
-        <script src="./test/isWeekday.test.js" ></script>
-
-        <script src="/functions/yearsAgo.js"></script>
-        <script src="./test/yearsAgo.test.js" ></script>
-
-        <script src="/functions/countAllPaar.js"></script>
-        <script src="./test/countAllPaar.test.js" ></script>
-
-        <script src="/functions/countAllFromTown.js"></script>
-        <script src="./test/countAllFromTown.test.js" ></script>
-
-        <script>
-            mocha.checkLeaks();
-            mocha.run();
-        </script>
-    </body>
 </body>
 </html>
