@@ -3,7 +3,7 @@ describe('isFromBellville' , function(){
         assert.equal(isFromBellville('CY'),true);
     });
 
-    it('should return fasle if registration starts with anything but CY' , function(){
-        assert.equal(isFromBellville(''),false);
+    it('should return fasle if registration does not start CY' , function(){
+        assert.equal(isFromBellville('CA'),false);
     });
 });

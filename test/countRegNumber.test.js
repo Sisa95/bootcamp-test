@@ -2,7 +2,7 @@ describe('countRegNumber' , function(){
 
     it('Expected registration number to be 0' , function(){
         var regCount = countRegNumber('');
-        assert.isBelow(regCount,1 )
+        assert.equal(regCount,0)
     });
 
     it('Expected registration number to be equal to 1' , function(){
@@ -10,8 +10,8 @@ describe('countRegNumber' , function(){
         assert.equal(regCount,1 )
     });
 
-    it('Expected registration number to be more than 1' , function(){
+    it('Expected registration number to equal 2' , function(){
         var regCount = countRegNumber('CA 182736, CY 523519');
-        assert.isAbove(regCount,1)
+        assert.equal(regCount,2)
     });
 });

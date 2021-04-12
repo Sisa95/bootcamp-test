@@ -12,6 +12,6 @@
     });
 
     it('Should return some where else ' , function(){
-        assert.notEqual(fromWhere(''),"Somewhere else");
+        assert.notEqual(fromWhere('EC'),"Somewhere else");
     });
 });
