@@ -7,11 +7,11 @@ describe('regCheck' , function(){
         assert.equal(regCheck('DV 23 NB GP', ''),false);
     });
 
-    it('should return false if no parameters have been passed ' , function(){
+    it('should return false if no parameters have been parsed ' , function(){
         assert.equal(regCheck('', ''),false);
     });
 
-    it('should return false if registration number is an empty string and location has been passed ' , function(){
+    it('should return false if registration number is an empty string and location has been parsed ' , function(){
         assert.equal(regCheck('', 'GP'),false);
     });
 });
