@@ -1,5 +1,5 @@
 describe('totalPhoneBill' , function(){
-    it('Should return R3.40' , function(){
+    it('Should return R3.40 when you add call & sms total, R2.75 per call R0.65 per sms' , function(){
         assert.equal(totalPhoneBill('call, sms'),"R3.40");
     });
 
